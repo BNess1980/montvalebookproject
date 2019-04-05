@@ -1,0 +1,36 @@
+$med-grey:#818181;
+$dark-grey:#494949;
+$nav-text-color:#fff;
+$light-blue:#009dd5;
+$header-font:"Overpass", Arial, sans-serif;
+$logo-font:"Arapey", Georgia, sans-serif;
+
+.box-shadow{
+   -webkit-box-shadow: 0px 3px 3px $med-grey;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   -moz-box-shadow:    0px 3px 3px $med-grey;  /* Firefox 3.5 - 3.6 */
+   box-shadow:         0px 3px 3px $med-grey;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */	
+}
+
+.cta-button{
+	font-family:$header-font;
+	color:white;
+	background:$dark-grey;
+	padding:.5em 1em;
+	border:1px solid #fff;
+	font-size:14px;
+	text-decoration:none!important;
+	text-transform:uppercase;
+	&:hover{
+		background:$light-blue;
+	};
+}
+
+.cta-addtocart{
+	@extend .cta-button;
+	outline:2px solid $dark-grey;
+	&:hover{
+		cursor:pointer;
+		outline:2px solid $light-blue;
+		@extend .box-shadow;		
+	};
+}

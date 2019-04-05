@@ -1,0 +1,25 @@
+<div id="product-page">
+
+  <div class="section-title">
+  	<h2>{{title}} : {{subTitle}}</h2>
+  </div>
+
+
+<section class="product-list">
+  <div *ngFor="let book of books" class="product-card">
+    <div class="product-image">
+      <img src="{{book.imgURL}}" [attr.title]="book.title" alt="Book Image">
+    </div>
+    <div class="product-info">
+      <h5>{{book.title}}</h5>
+      <h6>by {{book.author}}</h6>
+      <hr />
+      <p class="product-desc">{{book.desc}}</p>
+      <p class="product-price">{{book.price | currency}}</p>
+      <button class="cta-addtocart">Add to Cart</button>
+    </div>
+  </div>	  
+
+</section>
+
+</div>

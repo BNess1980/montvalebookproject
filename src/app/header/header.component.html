@@ -1,0 +1,69 @@
+<header>
+  <div class="logo">
+    <h1>Fanatic Books</h1>
+    <img src="../../assets/bookstack.png" title="Fanatic Books Logo" alt="Fanatic Books Logo">
+  </div>
+  <div class="desktop-search">
+    <app-search></app-search>
+  </div>
+  <div class="account">
+    <div *ngIf="!isLoggedIn">
+      <ul>
+        <li><a class="cta-button" href="#">Create Account</a></li>
+        <li><a class="cta-button" (click)="logIn()">Sign In</a></li>
+      </ul>
+    </div>
+    <div *ngIf="isLoggedIn">
+      <h2>Welcome, {{user}}</h2>
+      <ul>
+        <li><a href="#">My Account</a>&nbsp;&nbsp;|</li>
+        <li><a (click)="logOut()">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section class="mobile-search">
+  <app-search></app-search>
+</section>  
+<nav class="bookstore-nav">
+  <ul class="menu">
+    <li><a href="#">Biography</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Cookbooks</a></li>
+    <li class="menu-item-with-children"><a href="#">Fiction</a>
+      <ul class="sub-menu">
+        <li><a href="#">African American Fiction</a></li>
+        <li><a href="#">Anthologies</a></li>
+        <li><a href="#">Christian Fiction</a></li>
+        <li><a href="#">Drama</a></li>
+        <li><a href="#">Essays</a></li>
+        <li><a href="#">Fiction & Literature Classics</a></li>
+        <li><a href="#">Fiction Subjects</a></li>
+        <li><a href="#">Folklore &amp; Mythology</a></li>
+        <li><a href="#">Graphic Novels & Comic Books</a></li>
+        <li><a href="#">Historical Fiction</a></li>
+        <li><a href="#">Horror</a></li>
+        <li><a href="#">Humorous Fiction</a></li>
+        <li><a href="#">Letters</a></li>
+        <li><a href="#">Literary Criticism</a></li>
+        <li><a href="#">Mystery &amp; Crime</a></li>
+        <li><a href="#">Nautical & Maritime Fiction</a></li>
+        <li><a href="#">Novels &amp; Short Stories</a></li>
+        <li><a href="#">People &amp; Cultures</a></li>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Science Fiction &amp; Fantasy</a></li>
+        <li><a href="#">Short Stories</a></li>
+        <li><a href="#">Teen Fiction</a></li>
+        <li><a href="#">Thrillers</a></li>
+        <li><a href="#">War &amp; Military Fiction</a></li>
+        <li><a href="#">Westerns</a></li>
+        <li><a href="#">Women's Fiction</a></li>
+        <li><a href="#">World Literature</a></li>
+      </ul>
+    </li>
+    <li><a href="#" title="Health">Health &amp; Fitness</a></li>
+    <li><a href="#" title="History">History</a></li>
+    <li><a href="#" title="Religion & Inspiration">Religion &amp; Inspiration</a></li>
+    <li><a href="#" title="Self-Improvement">Self-Improvement</a></li>
+  </ul>
+</nav>

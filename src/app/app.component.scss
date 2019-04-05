@@ -1,0 +1,24 @@
+body{
+	margin:0 auto;
+}
+
+// For Flexbox IE
+.section {
+  display: flex;
+}
+
+.row.d-flex.fHeight {
+  align-items: flex-end;
+}
+
+.mn120 {
+  min-height: 120px;
+}
+
+img {
+  max-width: 40%;
+}
+
+.mh100vh {
+  min-height: 900px;
+}

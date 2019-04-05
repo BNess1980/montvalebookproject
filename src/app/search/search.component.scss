@@ -1,0 +1,37 @@
+@import '../shared/vars.scss';
+
+// Search
+.searchContainer {
+  width:100%;
+  font-size: .90rem;
+  display: inline-flex;
+  flex: 1 1 350px;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 2px solid $dark-grey;
+  outline: 2px solid white;
+}
+
+.searchIcon {
+  padding: 0.5rem;
+  color: $dark-grey !important;
+  background: #fff !important;
+}
+
+.searchBox {
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  flex: 1;
+}
+
+.searchButton {
+  font-family: $header-font;
+  background: $dark-grey;
+  font-size: .75rem;
+  border: 0;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0;
+}
+// End Search
